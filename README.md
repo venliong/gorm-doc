@@ -2,16 +2,12 @@
 
 The fantastic ORM library for Golang, aims to be developer friendly.
 
-[![Join the chat at https://gitter.im/jinzhu/gorm](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/jinzhu/gorm?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-[![wercker status](https://app.wercker.com/status/0cb7bb1039e21b74f8274941428e0921/s/master "wercker status")](https://app.wercker.com/project/bykey/0cb7bb1039e21b74f8274941428e0921)
-[![GoDoc](https://godoc.org/github.com/jinzhu/gorm?status.svg)](https://godoc.org/github.com/jinzhu/gorm)
-
 ## Overview
 
-* Full-Featured ORM (almost)
-* Associations (Has One, Has Many, Belongs To, Many To Many, Polymorphism)
-* Callbacks (Before/After Create/Save/Update/Delete/Find)
-* Preloading (eager loading)
+* Full-Featured ORM \(almost\)
+* Associations \(Has One, Has Many, Belongs To, Many To Many, Polymorphism\)
+* Callbacks \(Before/After Create/Save/Update/Delete/Find\)
+* Preloading \(eager loading\)
 * Transactions
 * Composite Primary Key
 * SQL Builder
@@ -37,8 +33,8 @@ go get -u github.com/jinzhu/gorm
 package main
 
 import (
-	"github.com/jinzhu/gorm"
-	_ "github.com/jinzhu/gorm/dialects/sqlite"
+    "github.com/jinzhu/gorm"
+    _ "github.com/jinzhu/gorm/dialects/sqlite"
 )
 
 type Product struct {
@@ -56,7 +52,7 @@ func main() {
 
   // Migrate the schema
   db.AutoMigrate(&Product{})
-  
+
   // Create
   db.Create(&Product{Code: "L1212", Price: 1000})
 
@@ -75,20 +71,21 @@ func main() {
 
 # Contributors
 
-https://github.com/jinzhu/gorm/graphs/contributors
+[https://github.com/jinzhu/gorm/graphs/contributors](https://github.com/jinzhu/gorm/graphs/contributors)
 
 # Supporting the project
 
-[![http://patreon.com/jinzhu](http://patreon_public_assets.s3.amazonaws.com/sized/becomeAPatronBanner.png)](http://patreon.com/jinzhu)
+[](http://patreon.com/jinzhu)
 
 # Author
 
 **jinzhu**
 
-* <http://github.com/jinzhu>
-* <wosmvp@gmail.com>
-* <http://twitter.com/zhangjinzhu>
+* [http://github.com/jinzhu](http://github.com/jinzhu)
+* [wosmvp@gmail.com](mailto:wosmvp@gmail.com)
+* [http://twitter.com/zhangjinzhu](http://twitter.com/zhangjinzhu)
 
 ## License
 
 Released under the [MIT License](https://github.com/jinzhu/gorm/blob/master/License).
+
