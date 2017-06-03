@@ -72,7 +72,7 @@ Run Raw SQL
 
 ```go
 db.Exec("DROP TABLE users;")
-db.Exec("UPDATE orders SET shipped_at=? WHERE id IN (?)", time.Now, []int64{11,22,33})
+db.Exec("UPDATE orders SET shipped_at=? WHERE id IN (?)", time.Now(), []int64{11,22,33})
 
 // Scan
 type Result struct {
@@ -161,7 +161,7 @@ Gorm has built-in logger support, by default, it will print happened errors
 // Enable Logger, show detailed log
 db.LogMode(true)
 
-// Diable Logger, don't show any log
+// Disable Logger, don't show any log
 db.LogMode(false)
 
 // Debug a single operation, show detailed log for this operation
